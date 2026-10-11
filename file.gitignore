@@ -1,0 +1,18 @@
+# Environnements virtuels
+venv/
+env/
+.venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# Données (si elles sont lourdes, sinon vous pouvez les garder)
+# data/
