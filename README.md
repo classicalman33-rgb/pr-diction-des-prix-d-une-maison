@@ -13,23 +13,32 @@ prédiction des prix d'une maison/
 ├── data/
 │   ├── Housing-selected-columns.csv
 │   └── loading_data.py        # Chargement du CSV (data_loader)
-├── notebook/
-│   └── eda.ipynb              # Analyse exploratoire
-├── src/
-│   ├── config.py              # Script principal : orchestration du pipeline
-│   ├── data_processing.py     # Prétraitement + split train/test
-│   ├── outliers.py            # Détection des outliers (méthode IQR)
-│   ├── find_best_params.py    # Recherche de alpha (RidgeCV / LassoCV)
-│   ├── train_model.py         # Entraînement
-│   └── evaluate_model.py      # Calcul des métriques
+├── guide/
+│   ├── Cahier de projet - Prediction Prix Maison.pdf
+│   └── Guide - Prediction Prix Maison (ML).pdf
 ├── models/
 │   ├── price.py               # Modèles sur la cible brute
 │   ├── price_log.py           # Modèles sur la cible log
 │   └── price_boxcox.py        # Modèles sur la cible Box-Cox
-├── test/                      # Tests (pytest)
-├── guide/
-└── pyproject.toml             # (optionnel) projet installable en mode éditable
-```
+├── notebook/
+│   └── eda.ipynb              # Analyse exploratoire
+├── prediction_prix_maison.egg-info/   # Généré par `pip install -e .`
+├── src/
+│   ├── config.py              # Script principal : orchestration du pipeline
+│   ├── data_processing.py     # Prétraitement + split train/test
+│   ├── evaluate_model.py      # Calcul des métriques
+│   ├── find_best_params.py    # Recherche de alpha (RidgeCV / LassoCV)
+│   ├── outliers.py            # Détection des outliers (méthode IQR)
+│   └── train_model.py         # Entraînement
+├── test/
+│   ├── other.py
+│   ├── test_price.py          # Tests des modèles sur la cible brute
+│   ├── test_price_log.py      # Tests des modèles sur la cible log
+│   └── test_price_boxcox.py   # Tests des modèles sur la cible Box-Cox
+├── .gitattributes
+├── file.gitignore
+├── pyproject.toml             # Projet installable en mode éditable
+└── README.md```
 
 ---
 
