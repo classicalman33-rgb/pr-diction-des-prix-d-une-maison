@@ -165,7 +165,7 @@ Toutes cibles confondues (`price`, `price_log`, `price_boxcox`), les modèles li
 | Configuration | R² train | R² test |
 |---|---|---|
 | Hyperparamètres par défaut | 0.9377 | 0.5585 |
-| Régularisé | — | **0.6798** |
+| Régularisé | 0.679 | **0.6798** |
 
 Le Random Forest par défaut **sur-apprend** fortement (écart train/test de 0,38). En contraignant les arbres, il dépasse la régression linéaire, ce qui indique une composante non linéaire.
 
